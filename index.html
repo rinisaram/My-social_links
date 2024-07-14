@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessica Randall - Portfolio</title>
+  <style>
+    /* Reset and general styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: hsl(0, 0%, 8%); /* Off Black background color */
+    }
+
+    /* Container styles */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Centered box styles */
+    .centered-box {
+      background-color: hsl(0, 0%, 12%); /* Dark Grey */
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      padding: 20px;
+      width: 30%; /* Adjusted width */
+      max-width: 600px; /* Max width for responsiveness */
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Circle styles */
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden; /* Clip content outside circle */
+      margin: 0 auto 20px;
+    }
+
+    .circle img {
+      width: 100%; /* Ensure the image fills the circle */
+      height: 100%; /* Ensure the image fills the circle */
+      object-fit: cover; /* Maintain aspect ratio and cover */
+    }
+
+    /* Name styles */
+    .name {
+      font-size: 28px; /* Increased font size for name */
+      margin-bottom: 5px; /* Reduced margin for better alignment */
+    }
+
+    /* Role styles */
+    .role {
+      font-size: 14px; /* Reduced font size for role */
+      color: hsl(0, 0%, 70%); /* Light grey color */
+      margin-bottom: 20px; /* Adjusted margin for spacing */
+    }
+
+    /* Location styles */
+    .location {
+      color: hsl(75, 94%, 57%); /* Adjust as needed */
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Social links styles */
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-link {
+      background-color: hsl(0, 0%, 20%); /* Grey */
+      color: white;
+      padding: 15px 40px; /* Adjusted padding */
+      border-radius: 12px; /* Rounded corners */
+      margin-bottom: 10px;
+      text-decoration: none;
+      text-align: center;
+      width: 100%; /* Full width */
+      display: block;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+      cursor: pointer;
+    }
+
+    .social-link:hover,
+    .social-link:focus {
+      background-color: hsl(75, 94%, 57%); /* Change to yellow on hover or focus */
+      color: black; /* Change font color to black on hover or focus */
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="centered-box">
+      <div class="circle">
+        <img src="rini photo.jpg" alt="Profile Image">
+      </div>
+      <h1 class="name">Rini Sara Markose</h1>
+      <p class="location">Kochi, Kerala</p>
+      <h5 class="role">Front-end developer and a travel enthusiast.</h5>
+
+      <div class="social-links">
+        <a href="https://github.com/rinisaram" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/rini-sara/" class="social-link">LinkedIn</a>
+        <a href="https://rinisara.vercel.app/" class="social-link">Portfolio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
